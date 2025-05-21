@@ -8,6 +8,8 @@ Optimized for fast processing with lightweight checksums and compact binary layo
 
 - Name:
   - Common: Vermay
+  - Kana-rep.: ファーメィ
+  - Han-rep.： 華梅 (ja: かばい, zh: Huáméi)
   - Full: Version Management Format for Articles withby YAML front-matter Markdown
 - File Extension:
   - Index Barrel: `*.ivb`
@@ -21,9 +23,19 @@ Optimized for fast processing with lightweight checksums and compact binary layo
   - [4, 7] `0xb2, 0xda, 0xc7, 0xdf`: EUC-JP "華梅" pron "huamei"
   - [8, 11] `0x89, 0xd8, 0x94, 0x7e`: Shift-JIS "華梅" pron "huamei"
   - [12, 13] `0x00, 0x01`: 2-bytes Unsigned Integer 1
-  - [14] `0xb2`:  JIS X 0201 "い" pron "i" (for Index Barrel only)
+  - [14] `0xbb`:  JIS X 0201 "さ" pron "sa" (for Index Barrel only)
   - [14] `0xc0`:  JIS X 0201 "た" pron "ta" (for Diff Barrel only)
   - [15] `0x3a`: ASCII ":"
+
+The official logographic representation (in Han characters) of Vermay is 華梅, chosen for two reasons:
+
+1. Phonetic closeness:
+  - In Mandarin Chinese, Huáméi (華梅) is phonetically approximate to the intended reading Vermay.
+1. Symbolic semantics:
+  - 華 (huá): meaning "splendid", "elegant", or "Chinese".
+  - 梅 (méi): meaning "plum", a symbol of perseverance and refinement.
+
+This makes 華梅 both a phonetic transliteration and a meaningful logographic representation — a double-origin name that expresses the elegance and strength of the format itself.
 
 
 ## Overview on Data Structure
